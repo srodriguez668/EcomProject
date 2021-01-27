@@ -1,0 +1,120 @@
+/* general */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Search bar and button */
+
+form.search-bar input[type=text] {
+    padding: .6rem;
+    font-size: 1rem;
+    border: 1px solid grey;
+    float: left;
+    width: 75%;
+    background: #f1f1f1;
+  }
+  
+  form.search-bar button {
+    float: left;
+    width: 20%;
+    padding: .6rem;
+    background:  rgb(103, 172, 236, .75);
+    color: white;
+    font-size: 1rem;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer;
+  }
+  
+  form.search-bar button:hover {
+    background:  rgb(103, 172, 236);
+  }
+  
+  /* Clear floats */
+  form.search-bar::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* product design */
+  
+.product{
+    background-color: white;
+    min-width: 16rem;
+    max-width: 20rem;
+    margin: .4rem auto;  
+    text-align: center;
+}
+
+  .product img{
+      padding-top: .8rem;
+      height: 100%;
+      width: 80%;
+      margin: auto;
+  }
+
+  .product-name{
+      font-weight: bold;
+      font-size: 1rem;
+      margin: .2rem;
+      border: rgb(111, 111, 111, .25) solid .2rem;
+      color: black;
+  }
+
+  .product-price {
+      font-style: italic;
+      font-weight: bold;
+      margin: .2rem;
+      padding-bottom: .4rem;
+      color: black;
+  }
+
+  .product-description{
+      width: 80%;
+      padding-left: 12.5%;
+      color: black;
+  }
+
+  /*desktop*/
+
+@media (min-width: 50rem) {
+
+form.search-bar input[type=text] {
+    max-width: 32rem;
+}
+
+form.search-bar button {
+    max-width: 8rem;
+}
+
+.product {
+    height: 21rem;
+    width: 18rem;
+    margin: .5rem .4rem;
+    vertical-align: middle ;
+    display: inline-block;
+    padding: 1rem;
+}
+
+.product img{
+    height: 13rem;
+    position: relative;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+.product-name{
+    font-size: 1.1rem;
+}
+
+.product-description{
+   height: 3.75rem;
+   padding: auto;
+}
+
+}

@@ -1,0 +1,175 @@
+/* General */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+  color: black;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    max-height: 100%;
+    max-width: 40rem;
+    position: relative;
+    margin: auto;
+    background-color: black;
+  }
+
+  .product-image{
+    width: 90%;
+    height: 90%;
+    max-width: 40rem;
+    position:relative;
+    left: 6%;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 1rem;
+    margin-top: -1.2rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: .9rem;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 93%;
+    text-align: right;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: .85rem;
+    width: 5rem;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot-container {
+      text-align: center;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /* content */
+
+  #who, #promise{
+      text-align: center;
+      width: 85%;
+      margin: 0 auto 2rem;
+  }
+  .feature-product{
+    text-align: center;
+    margin: 1rem auto;
+    width: 85%;
+    border:  rgb(144, 193, 240) dashed .2rem;
+    padding: .5rem;
+  }
+
+  .feature-product img{
+    padding: .8rem 0;
+    height: 100%;
+    width: 80%;
+    max-width: 20rem;
+    margin: auto;
+}
+
+  /* Desktop view */
+
+@media (min-width: 50rem) {
+
+.slideshow-container {
+    width: 100%;
+    max-width: 50rem;
+}
+
+.text{
+    font-size: 1.75rem;
+}
+
+.numbertext{
+    font-size: 1.4rem;
+    width: 10rem;
+}
+
+#who, #promise {
+    width: 75%;
+    max-width: 50rem;
+    font-size: 1.25rem;
+}
+
+.feature-product{
+  width: 75%;
+  max-width: 40rem;
+  font-size: 1.25rem;
+}
+
+.prev, .next {
+    font-size: 2rem;
+}
+
+}

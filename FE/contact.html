@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/shareStyle.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+
+                <div class="desktop-nav">
+                    <a href="index.html">Home</a>
+                    <a href="product.html">Products</a>
+                    <a href="search.html">Search</a>
+                </div>
+
+                <div class="mobile-nav">
+                    <button class="dropbtn" onclick="myFunction()">
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="index.html">Home</a>
+                        <a href="product.html">Products</a>
+                        <a href="search.html">Search</a>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+    
+        <div class="contact-form">
+            <h1>If you need us, we are here for you!</h1><br>
+
+            <form name="contact-inputs" id="form" action="" method="get" target="_blank"><br>
+
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone"> <br><br>
+
+                Preffered contact method: <br>
+                <input type="radio" name="contactMethod"> Phone <br>
+                <input type="radio" name="contactMethod"> Email <br><br>
+
+                How did you hear about us?: <br>
+                <input type="checkbox"> Conference <br>
+                <input type="checkbox"> TV <br>
+                <input type="checkbox"> Radio <br>
+                <input type="checkbox"> Word of Mouth <br>
+                <input type="checkbox"> other <br><br>
+
+                <textarea name="comments" id="comments">
+                    Additional comments
+                    </textarea> <br><br>
+
+                <input id="send" type="submit" value="Send" onclick="return contactUs()"><br><br>
+
+            </form>
+
+        </div>
+
+        <footer class="main">
+
+            <div class="uncopyright">
+                <p>Uncopyright &copy; 2020 <strong>Santiago Rodriguez</strong></p>
+            </div><!-- end uncopyright -->
+
+        </footer>
+
+    </div>
+
+    <script src="js/contact.js"></script>
+
+</body>
+
+</html>

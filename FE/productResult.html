@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/shareStyle.css">
+    <link rel="stylesheet" href="css/productResult.css">
+    <title>Product Result</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+
+                <div class="desktop-nav">
+                    <a href="index.html">Home</a>
+                    <a href="product.html">Products</a>
+                    <a href="search.html">Search</a>
+                </div>
+
+                <div class="mobile-nav">
+                    <button class="dropbtn" onclick="myFunction()">
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="index.html">Home</a>
+                        <a href="product.html">Products</a>
+                        <a href="search.html">Search</a>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+
+        <div class="main-product">
+            <img src="img/ryzen-7.jpg" alt="CPU: Ryzen 7">
+            <div class="content">
+                <h3 class="main-name"> Ryzen 7</h3>
+                <p class="main-description"> The world's most advance 8 core processor. Capable of providing 100+ FPS
+                    performance in AAA titles. Also capable of doing everything you need if you are a create in
+                    photoshop or 3D rendering. </p>
+                <ul class="main-specifics">
+                    <div class="specific"> <strong>Specifics:</strong> </div>
+                    <li> 3rd Gen Ryzen </li>
+                    <li> Socket AM4</li>
+                    <li> Max Boost Frequency 4.4Ghz </li>
+                    <li> DDR4 Support </li>
+                </ul>
+                <h4 class="main-price"> $300</h4>
+            </div>
+
+            <form class="buy-section">
+                <input type="text" class="buy-quantity" placeholder="1" name="search">
+                <button class="buy-now"> Buy now</button>
+            </form>
+
+        </div>
+
+        <footer class="main">
+
+            <div class="uncopyright">
+                <p>Uncopyright &copy; 2020 <strong>Santiago Rodriguez</strong></p>
+            </div><!-- end uncopyright -->
+
+        </footer>
+
+    </div>
+
+    <script src="js/productResult.js"></script>
+
+</body>
+
+</html>

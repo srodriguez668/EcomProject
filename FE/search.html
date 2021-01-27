@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/shareStyle.css">
+    <link rel="stylesheet" href="css/search.css">
+    <title>Search</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+
+                <div class="desktop-nav">
+                    <a href="index.html">Home</a>
+                    <a href="product.html">Products</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="mobile-nav">
+                    <button class="dropbtn" onclick="myFunction()">
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="index.html">Home</a>
+                        <a href="product.html">Products</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+
+        <form class="search-bar">
+            <input type="text" class="search-input" placeholder="Search.." name="search">
+            <button type="submit" class="search-submit" onsubmit="return search()">Search</button>
+        </form>
+
+        <div class="search-result">
+            <div class="product">
+                <a href="productResult.html">
+                    <div class="product-image"> <img src="../submissions/img/ryzen-7.jpg" alt="CPU: Ryzen-7"> </div>
+                    <div class="product-name">Ryzen-7</div>
+                    <div class="product-description">With 8 cores and 16 threads, you can anything from games to
+                        professional work</div>
+                    <div class="product-price">$300</div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="productResult.html">
+                    <div class="product-image"> <img src="../submissions/img/ryzen-5.jpg" alt="CPU: Ryzen-5"> </div>
+                    <div class="product-name">Ryzen-5</div>
+                    <div class="product-description"> An amazing part of a budget build. 6 cores never felt so great.
+                    </div>
+                    <div class="product-price">$200</div>
+                </a>
+            </div>
+        </div>
+
+        <footer class="main">
+
+            <div class="uncopyright">
+                <p>Uncopyright &copy; 2020 <strong>Santiago Rodriguez</strong></p>
+            </div><!-- end uncopyright -->
+
+        </footer>
+
+    </div>
+
+    <script src="js/search.js"></script>
+
+</body>
+
+</html>

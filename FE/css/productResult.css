@@ -1,0 +1,113 @@
+
+/*general*/
+
+.main-product{
+    background-color: white;
+    min-width: 16rem;
+    max-width: 90%;
+    margin: .4rem auto;  
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.content {
+    width: 80%;
+    max-width: 40rem;
+    margin: auto;
+    border: rgb(111, 111, 111, .25) solid .1rem;
+}
+
+/*descrition and buttion*/
+
+.main-product img{
+    padding-top: .8rem;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+.main-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: .25rem;
+    background-color: rgb(144, 193, 240, .25);
+}
+
+.main-description {
+    width: 90%;
+    margin: .8rem auto 0;
+    font-size: .9rem;
+    padding-bottom: .1rem;
+}
+
+.main-specifics {
+    width: 65%;
+    margin: 0rem auto .2rem;
+    font-size: .8rem;
+    padding-bottom: .1rem;
+}
+
+.specific{
+    margin: .4rem auto .2rem;
+}
+
+.main-price{
+    margin: .3rem auto 0;
+    font-size: 1.3rem;
+    background-color: rgb(144, 193, 240, .25);
+}
+
+.buy-quantity{
+    height: 1.7rem;
+    font-size: 1.5rem;
+    width: 2rem;
+    text-align: center;
+}
+
+.buy-now{
+    width: 10rem;
+    height: 2rem;
+    font-size: 1.25rem;
+    border-radius: 5rem;
+    font-weight: bold;
+    margin-top: .6rem;
+}
+
+.buy-now:hover{
+    background-color: rgb(144, 193, 240, .5);
+}
+
+/*desktop*/
+
+@media (min-width: 50rem) {
+
+    .content {
+        width: 60%; 
+    }
+    
+    .main-product img{
+        max-width: 35rem;
+    }
+
+    .main-name{
+        font-size: 2rem;
+    }
+    
+    .main-description {
+        font-size: 1.1rem;
+    }
+    
+    .main-specifics {
+        font-size: 1rem;
+        margin-bottom: .6rem;
+    }
+
+.main-price{
+    font-size: 1.5rem;
+}
+
+.buy-now{ 
+    margin-top: 1rem;
+}
+
+}

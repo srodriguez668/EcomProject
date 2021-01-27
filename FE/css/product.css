@@ -1,0 +1,121 @@
+/* general */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.content-container {
+    min-height: 25rem;
+    max-height: 100%;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .filterDiv {
+    float: center;
+    background-color: rgb(208, 208, 208, .25);
+    color: rgb(103, 172, 236);
+    width: 90%;
+    text-align: center;
+    margin: 1rem auto;
+    display: none; /*Hidden by default */
+    padding: 1rem 0rem;
+  }
+  
+  .show {
+    display: block;
+  }
+
+/* filtering button style*/
+
+  .btn {
+    border: none;
+    outline: none;
+    padding: .7rem 1rem;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+/* product design */
+  
+  .product{
+    background-color: white;
+    min-width: 16rem;
+    max-width: 20rem;
+    margin: .4rem auto;  
+}
+
+  .product img{
+      padding-top: .8rem;
+      height: 100%;
+      width: 80%;
+      margin: auto;
+  }
+
+  .product-name{
+      font-weight: bold;
+      font-size: 1rem;
+      margin: .2rem;
+      border: rgb(111, 111, 111, .25) solid .2rem;
+      color: black;
+  }
+
+  .product-price {
+      font-style: italic;
+      font-weight: bold;
+      margin: .2rem;
+      padding-bottom: .4rem;
+      color: black;
+  }
+
+  .product-description{
+      width: 80%;
+      padding-left: 12.5%;
+      color: black;
+  }
+
+  /* Desktop */
+  
+  @media (min-width: 50rem) {
+    .filterDiv {
+        padding: 1rem 0rem;
+    }
+
+    .product {
+        height: 21rem;
+        width: 18rem;
+        margin: .5rem .4rem;
+        vertical-align: middle ;
+        display: inline-block;
+        padding: 1rem;
+    }
+
+    .product img{
+        height: 13rem;
+        position: relative;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    .product-name{
+        font-size: 1.1rem;
+    }
+
+    .product-description{
+       height: 3.75rem;
+       padding: auto;
+    }
+
+  }
