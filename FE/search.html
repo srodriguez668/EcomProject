@@ -34,30 +34,13 @@
         </header>
 
         <form class="search-bar">
-            <input type="text" class="search-input" placeholder="Search.." name="search">
-            <button type="submit" class="search-submit" onsubmit="return search()">Search</button>
+            <input id="search" type="text" class="search-input" placeholder="Search.." name="search">
         </form>
 
-        <div class="search-result">
-            <div class="product">
-                <a href="productResult.html">
-                    <div class="product-image"> <img src="../submissions/img/ryzen-7.jpg" alt="CPU: Ryzen-7"> </div>
-                    <div class="product-name">Ryzen-7</div>
-                    <div class="product-description">With 8 cores and 16 threads, you can anything from games to
-                        professional work</div>
-                    <div class="product-price">$300</div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="productResult.html">
-                    <div class="product-image"> <img src="../submissions/img/ryzen-5.jpg" alt="CPU: Ryzen-5"> </div>
-                    <div class="product-name">Ryzen-5</div>
-                    <div class="product-description"> An amazing part of a budget build. 6 cores never felt so great.
-                    </div>
-                    <div class="product-price">$200</div>
-                </a>
-            </div>
-        </div>
+        <button type="button" class="search-submit" onclick="search()" >Search</button>
+
+
+        <div id = "searchResults" class="search-result"></div>
 
         <footer class="main">
 
