@@ -126,7 +126,7 @@ a{
     text-align: center;
     margin: 1rem auto;
     width: 85%;
-    border:  rgb(144, 193, 240) dashed .2rem;
+    border:  rgb(144, 193, 240) solid .2rem;
     padding: .5rem;
   }
 

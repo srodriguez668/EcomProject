@@ -29,13 +29,12 @@ func main() {
 func handleRequests() {
 	// creates a new instance of a mux router
 	myRouter := mux.NewRouter().StrictSlash(true)
-	//myRouter.HandleFunc("/", home)
 	myRouter.HandleFunc("/api/products", allProducts).Methods("GET")
-	myRouter.HandleFunc("/api/product/cpu", getCpu).Methods("GET")
-	myRouter.HandleFunc("/api/product/gpu", getGpu).Methods("GET")
-	myRouter.HandleFunc("/api/product/ram", getRam).Methods("GET")
-	myRouter.HandleFunc("/api/product/ssd", getSsd).Methods("GET")
-	myRouter.HandleFunc("/api/product/motherboard", getMotherboard).Methods("GET")
+	// myRouter.HandleFunc("/api/product/cpu", getCpu).Methods("GET")
+	// myRouter.HandleFunc("/api/product/gpu", getGpu).Methods("GET")
+	// myRouter.HandleFunc("/api/product/ram", getRam).Methods("GET")
+	// myRouter.HandleFunc("/api/product/ssd", getSsd).Methods("GET")
+	// myRouter.HandleFunc("/api/product/motherboard", getMotherboard).Methods("GET")
 	myRouter.HandleFunc("/api/product/{name}", searchProduct).Methods("GET")
 	log.Fatal(http.ListenAndServe(":8000", myRouter))
 }
@@ -45,25 +44,27 @@ func allProducts(w http.ResponseWriter, r *http.Request) {
 	runSQL(w, "SELECT * FROM product")
 }
 
-func getCpu(w http.ResponseWriter, r *http.Request) {
-	runSQL(w, "SELECT * FROM product p WHERE p.product_category='CPU'")
-}
+// Enpoints ready for category if needed/ I were to make this public
 
-func getGpu(w http.ResponseWriter, r *http.Request) {
-	runSQL(w, "SELECT * FROM product p WHERE p.product_category='GPU'")
-}
+// func getCpu(w http.ResponseWriter, r *http.Request) {
+// 	runSQL(w, "SELECT * FROM product p WHERE p.product_category='CPU'")
+// }
 
-func getRam(w http.ResponseWriter, r *http.Request) {
-	runSQL(w, "SELECT * FROM product p WHERE p.product_category='Ram'")
-}
+// func getGpu(w http.ResponseWriter, r *http.Request) {
+// 	runSQL(w, "SELECT * FROM product p WHERE p.product_category='GPU'")
+// }
 
-func getSsd(w http.ResponseWriter, r *http.Request) {
-	runSQL(w, "SELECT * FROM product p WHERE p.product_category='SSD'")
-}
+// func getRam(w http.ResponseWriter, r *http.Request) {
+// 	runSQL(w, "SELECT * FROM product p WHERE p.product_category='Ram'")
+// }
 
-func getMotherboard(w http.ResponseWriter, r *http.Request) {
-	runSQL(w, "SELECT * FROM product p WHERE p.product_category='Motherboard'")
-}
+// func getSsd(w http.ResponseWriter, r *http.Request) {
+// 	runSQL(w, "SELECT * FROM product p WHERE p.product_category='SSD'")
+// }
+
+// func getMotherboard(w http.ResponseWriter, r *http.Request) {
+// 	runSQL(w, "SELECT * FROM product p WHERE p.product_category='Motherboard'")
+//}
 
 func searchProduct(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
