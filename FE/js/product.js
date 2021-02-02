@@ -13,12 +13,13 @@ async function hitApi() {
             for (i = 0; i < data.length; i++) {
                 theDiv.innerHTML +=
                 `<div class="filterDiv ${data[i].category}">
-                <div class="product" onlick="window.location.href = 'productResult.html';">
-                    <a class="product-URL" href="productResult.html"></a>
+                <div class="product">
+                    <a class="product-URL" href="productResult.html">
                     <div class="product-image"> <img src="${data[i].image}"> </div>
                     <div class="product-name">${data[i].name} </div>
                     <div class="product-description"> ${data[i].description}</div>
                     <div class="product-price"> $${data[i].price}</div>
+                    </a>
                 </div></div>`;
                 filterSelection('all')
             }
