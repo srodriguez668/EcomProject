@@ -88,7 +88,7 @@ func runSQL(w http.ResponseWriter, x string) {
 	//gets the password from my .env file
 	err := godotenv.Load(".env")
 	if err != nil {log.Fatal(err)}
-	dbpassword := os.Getenv("DB_PASSWORD")
+	dbpassword := os.Getenv("MYSQL_ROOT_PASSWORD")
 	dbpath := "root:" + dbpassword + "@tcp(sqldb:3306)/products"
 
 	//open connection to sql and run query

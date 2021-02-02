@@ -12,8 +12,8 @@ async function hitApi() {
         .then(data => {
             for (i = 0; i < data.length; i++) {
                 theDiv.innerHTML +=
-            `<div class="filterDiv ${data[i].category}">
-                <div class="product">
+                `<div class="filterDiv ${data[i].category}">
+                <div class="product" onlick="window.location.href = 'productResult.html';">
                     <a class="product-URL" href="productResult.html"></a>
                     <div class="product-image"> <img src="${data[i].image}"> </div>
                     <div class="product-name">${data[i].name} </div>
